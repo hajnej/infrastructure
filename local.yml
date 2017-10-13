@@ -1,6 +1,6 @@
 ---
 - name: "Setup ntpd"
-  hosts: "all"
+  hosts: "localhost"
   pre_tasks:
   - name: "Download ansible-galaxy dependencies"
     local_action: command
