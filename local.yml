@@ -1,0 +1,6 @@
+---
+- name: "Setup ntpd"
+  hosts: "all"
+  roles:
+    - reallyenglish.ntpd
+  
