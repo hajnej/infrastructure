@@ -1,6 +1,10 @@
 ---
 - name: "Setup ntpd"
   hosts: "all"
+  pre_tasks:
+  - name: "Download ansible-galaxy dependencies"
+    local_action: command
+      ansible-galaxy install -r requirements.yml
   roles:
-    - reallyenglish.ntpd
+  - reallyenglish.ntpd
   
